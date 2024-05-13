@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: hsl(30, 54%, 90%); 
+}
+.container {
+  width: 670px;
+  padding: 40px;
+  margin: 40px;
+  background-color: white;
+  border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 0 40px 20px;
+  }
+  .container .image-holder {
+    position: relative;
+    top: 0;
+    left: -40px;
+    width: calc(100% + 80px);
+  }
+  .container .image-holder img {
+    border-radius: 0;
+  }
+}
+.container img {
+  width: 100%;
+  border-radius: 10px;
+}
+.container h1 {
+  margin: 20px 0;
+  font-weight: 400;
+  font-size: 40px;
+  font-family: "Young Serif", serif;
+}
+@media (max-width: 767px) {
+  .container h1 {
+    font-size: 30px;
+  }
+}
+.container h2 {
+  font-family: "Young Serif", serif;
+  color: hsl(14, 45%, 36%);
+  margin: 0 0 10px;
+  font-weight: 500;
+  font-size: 27px;
+ } 
+.container p,
+.container span,
+.container ul li{
+  font-size: 16px;
+  line-height: 1.6;
+  color: hsl(24, 5%, 18%);
+}
+.container ul {
+  list-style: none;
+}
+.container ul li {
+  display: flex;
+  align-items: center;
+}
+.container .first-spn {
+  font-weight: 700;
+}
+.container .prep-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+.container .prep-time h3 {
+  color: hsl(332, 51%, 32%);
+  margin: 0 0 10px;
+}
+.container .prep-time ul li .dot-spn {
+  font-size: 24px;
+  color: hsl(332, 51%, 32%);
+  margin-right: 20px;
+}
+ .container .ingredients,
+ .container .instructions  {
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+ }
+ .container .ingredients ul li .dot-spn {
+  font-size: 22px;
+  color: hsl(14, 45%, 36%);
+  margin-right: 20px;
+ }
+ .container .instructions ul li {
+  align-items: start;
+  margin-bottom: 5px;
+ }
+ .container .instructions ul li .num-spn {
+  font-weight: 700;
+  font-size: 14px;
+  color: hsl(14, 45%, 36%);
+  margin-right: 20px;
+ }
+ .container .nutrition {
+  margin: 20px 0;
+ }
+ .container .nutrition table {
+  width: 100%;
+  margin-top: 10px;
+ }
+ .container .nutrition table tr td {
+  padding: 10px;
+  color: hsl(24, 5%, 18%);
+ }
+ .container .nutrition table tr:not(:last-child) td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+ }
+ .container .nutrition table tr .second-td {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+ }
